@@ -3,54 +3,28 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <section className="sticky top-0 rounded shadow my-3 mx-4">
-      <nav className="flex bg-slate-700 rounded justify-between py-6 px-2 ">
-        <div className="">
-          <div>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              B
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              u
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              k
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              h
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              a
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              r
-            </span>
-            <span className="hover:text-4xl font-extrabold text-2xl text-gray-100">
-              i
-            </span>
-          </div>
-        </div>
-        <div className=" mx-5 px-5 flex justify-around gap-4">
+    <section className="sticky top-0 bg-[#2F312D]">
+      <nav className="flex justify-between items-center mb-8 w-full h-11 py-8">
+        <div className="text-stone-200 text-xl font-serif">Safdar Ali Shah</div>
+
+        <div className="space-x-4 text-stone-200">
           <Link
-            className="hover:text-4xl font-bold text-gray-100"
-            href={"/contacts"}
+            href="#about"
+            className="hover:text-stone-300 hover:text-3xl transition-all duration-300"
           >
-            {" "}
-            Contacts
+            ABOUT
           </Link>
           <Link
-            className="hover:text-4xl font-bold text-gray-100 text-center"
-            href={"/contacts"}
+            href="#weddings"
+            className="hover:text-stone-300 hover:text-3xl transition-all duration-300"
           >
-            {" "}
-            About
+            PROJECTS
           </Link>
           <Link
-            className="hover:text-4xl font-bold text-gray-100 text-center"
-            href={"/contacts"}
+            href="#contact"
+            className="hover:text-stone-300 hover:text-3xl transition-all duration-300"
           >
-            {" "}
-            Persona
+            CONTACT
           </Link>
         </div>
       </nav>
